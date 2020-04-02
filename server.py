@@ -5,7 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def main():
-    return render_template('index.html')
+    rows = 9
+    cols = 9
+
+    return render_template('index.html', rows=rows, cols=cols)
+
+
 
 
 if __name__ == '__main__':

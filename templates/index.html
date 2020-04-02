@@ -2,6 +2,20 @@
 
 {% block body %}
 
+<div class="game-field">
+{% for row in range(rows) %}
+    <div class="row">
+        {% for col in range(cols) %}
+            <div class="field">
+<!--                <div class="ball"></div>-->    <!-- balls on positions but without flask yet -->
+            </div>
 
+        {% endfor %}
+    </div>
+
+<!--        <div class="ball"></div>-->
+
+{% endfor %}
+</div>
 
 {% endblock %}
