@@ -12,3 +12,7 @@ def give_balls(number_of_balls=3, colors_of_balls=8):
 
 def place_balls(balls: list, board: list):
     pass
+
+
+def move_ball(board: list, start: tuple, end: tuple):
+    pass
