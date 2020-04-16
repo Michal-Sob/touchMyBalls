@@ -22,3 +22,9 @@
     width: 50px;
     height: 50px;
 }
+
+.active {
+    -webkit-box-shadow: -2px 6px 20px 14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 6px 20px 14px rgba(0,0,0,0.75);
+    box-shadow: -2px 6px 20px 14px rgba(0,0,0,0.75);
+}

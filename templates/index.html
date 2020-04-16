@@ -9,7 +9,9 @@
     <div class="row">
         {% for col in range(cols) %}
             <div class="field">
-<!--                <div class="ball"></div>-->    <!-- balls on positions but without flask yet -->
+                {% if col % 2 == 0 %}
+                    <div class="ball"></div>     <!-- balls on positions but without flask yet -->
+                {% endif %}
             </div>
 
         {% endfor %}
