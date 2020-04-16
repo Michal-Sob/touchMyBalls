@@ -14,15 +14,18 @@ function ballMovement() {
             console.log('ball Clicked')
             console.log(ball)
             console.log(ball.classList)
+            let activeBall = document.getElementsByClassName("ball active")
 
             if (ball.classList == "ball active") {
-                ball.classList.remove("active")
-            }
-            else {
-                ball.className += " active"
+                ball.classList.remove("active");
+            } else {
+                if (activeBall.length === 0) {
+                    ball.className += " active";
+                }
             }
 
-            let activeBall = document.getElementsByClassName("ball active")
+
+
 
             for (let field of fields) {
                 field.addEventListener("click", e => {
