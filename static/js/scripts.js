@@ -13,12 +13,14 @@ let button = document.getElementById('add_balls');
        let random = Math.floor(Math.random()*(len-1));
        let ballfield = fields2[random];
        ballfield.dataset.ball = 1;
+
        let randomcolor = Math.floor(Math.random()*(5)+1);
        let newball = document.createElement("div");
+
        newball.classList.add(`ball`);
        newball.classList.add(`color${randomcolor}`);
        ballfield.appendChild(newball);
-       newball.addEventListener("click", ballListener)
+       newball.addEventListener("click", ballMovement)
    }
    // ballMovement()
  }
@@ -59,6 +61,7 @@ let button = document.getElementById('add_balls');
                         field.appendChild(activeBall[0])
                         activeBall[0].classList.remove("active")
                         randomballs()
+                        ballcheck()
                     }
                 })
             }
