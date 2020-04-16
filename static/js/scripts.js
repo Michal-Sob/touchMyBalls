@@ -18,6 +18,7 @@ button.addEventListener('click',ballcheck);
        newball.classList.add(`ball`);
        newball.classList.add(`color${randomcolor}`);
        ballfield.appendChild(newball);
+       ballMovement()
    }
  }
 
@@ -28,25 +29,25 @@ button.addEventListener('click',ballcheck);
      for (let i=1;i<len+1;i++){
 
      }
-
  }
 }
 
 
 function ballMovement() {
-    let balls = document.getElementsByClassName('ball')
+    let balls = document.getElementsByClassName("ball")
     let fields = document.getElementsByClassName("field")
-    let activeBall = document.getElementsByClassName("ball active")
-
+    let activeBall = document.getElementsByClassName("active")
+    console.log(balls)
     for (let ball of balls) {
 
         ball.addEventListener("click", e => {
+            console.log(ball.classList)
 
-            if (ball.classList == "ball active") {
+            if (ball.classList[2] == "active") {
                 ball.classList.remove("active");
             } else {
                 if (activeBall.length === 0) {
-                    ball.className += " active";
+                    ball.classList += " active";
                 }
             }
 
@@ -64,4 +65,3 @@ function ballMovement() {
 }
 
 start()
-ballMovement()
