@@ -15,6 +15,141 @@
     box-sizing: border-box;
 }
 
+.color1 {
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color2 {
+    background-color: blue;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color3 {
+    background-color: yellow;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color4 {
+    background-color: forestgreen;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color5 {
+    background-color: blueviolet;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-field .row {
+    height: 60px;
+    display: flex;
+}
+
+.field {
+    height: 60px;
+    width: 60px;
+    background: white;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color1 {
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color2 {
+    background-color: blue;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color3 {
+    background-color: yellow;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color4 {
+    background-color: forestgreen;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color5 {
+    background-color: blueviolet;
+    height: 60px;
+    width: 60px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .ball {
     background: lightblue;
