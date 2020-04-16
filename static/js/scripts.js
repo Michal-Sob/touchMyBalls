@@ -8,13 +8,14 @@ button.addEventListener('click',ballcheck);
  function randomballs(){
 
    for (let i=0; i<3; i++){
-       let fields = document.getElementsByClassName('field');
+       let fields = document.querySelectorAll("[data-ball='0']");
        let len = Object.keys(fields).length;
        let random = Math.floor(Math.random()*(len-1));
        let ballfield = fields[random];
+       ballfield.dataset.ball = 1;
        let randomcolor = Math.floor(Math.random()*(5)+1);
-       ballfield.classList.replace('field','ball');
        let newball = document.createElement("div");
+       newball.classList.add(`ball`);
        newball.classList.add(`color${randomcolor}`);
        ballfield.appendChild(newball);
    }
@@ -63,4 +64,4 @@ function ballMovement() {
 }
 
 start()
-// ballMovement()
+ballMovement()

@@ -4,6 +4,9 @@
 }
 
 .field {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     height: 60px;
     width: 60px;
     background: white;
@@ -85,21 +88,7 @@
     box-sizing: border-box;
 }
 
-.ball {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    height: 60px;
-    width: 60px;
-    background: lightblue;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .active {
     -webkit-box-shadow: -2px 6px 20px 14px rgba(0,0,0,0.75);
