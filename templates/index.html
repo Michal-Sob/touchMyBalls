@@ -8,16 +8,17 @@
 {% for row in range(rows) %}
     <div class="row">
         {% for col in range(cols) %}
-            <div class="field">
+                <div class="field"
+                    data-row="{{ row }}"
+                    data-col="{{ col }}">
 <!--                <div class="ball"></div>-->    <!-- balls on positions but without flask yet -->
-            </div>
-
-        {% endfor %}
+                </div>
+            {% endfor %}
     </div>
 
 <!--        <div class="ball"></div>-->
 
 {% endfor %}
 </div>
-
+<button id="add_balls">tymczasowy button na potrzeby listenera</button>
 {% endblock %}
