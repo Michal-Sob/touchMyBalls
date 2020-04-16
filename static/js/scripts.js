@@ -1,5 +1,6 @@
 function ballMovement() {
     let balls = document.getElementsByClassName('ball')
+    let fields = document.getElementsByClassName("field")
 
     for (let ball of balls) {
         console.log(balls)
@@ -20,8 +21,30 @@ function ballMovement() {
             else {
                 ball.className += " active"
             }
+
+            let activeBall = document.getElementsByClassName("ball active")
+
+            for (let field of fields) {
+                field.addEventListener("click", e => {
+                    console.log(activeBall)
+                    console.log(field.hasChildNodes())
+                    console.log(field.firstChild)
+                    if (field.hasChildNodes() === false) {
+                        field.appendChild(activeBall[0])
+                        activeBall[0].classList.remove("active")
+                    }
+                })
+            }
         })
     }
+
+
+
+
+
+    // field.addEventListener("click", e => {
+    //
+    // })
 }
 
 ballMovement()
