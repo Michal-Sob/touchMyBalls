@@ -1,25 +1,26 @@
 function start() {
 
 let button = document.getElementById('add_balls');
-button.addEventListener('click',randomballs);
-button.addEventListener('click',ballcheck);
+// button.addEventListener('click',randomballs);
+// button.addEventListener('click',ballcheck);
 
 
  function randomballs(){
 
    for (let i=0; i<3; i++){
-       let fields = document.querySelectorAll("[data-ball='0']");
-       let len = Object.keys(fields).length;
+       let fields2 = document.querySelectorAll("[data-ball='0']");
+       let len = Object.keys(fields2).length;
        let random = Math.floor(Math.random()*(len-1));
-       let ballfield = fields[random];
+       let ballfield = fields2[random];
        ballfield.dataset.ball = 1;
        let randomcolor = Math.floor(Math.random()*(5)+1);
        let newball = document.createElement("div");
        newball.classList.add(`ball`);
        newball.classList.add(`color${randomcolor}`);
        ballfield.appendChild(newball);
-       ballMovement()
+       newball.addEventListener("click", ballListener)
    }
+   // ballMovement()
  }
 
 
@@ -30,10 +31,8 @@ button.addEventListener('click',ballcheck);
 
      }
  }
-}
 
-
-function ballMovement() {
+ function ballMovement() {
     let balls = document.getElementsByClassName("ball")
     let fields = document.getElementsByClassName("field")
     let activeBall = document.getElementsByClassName("active")
@@ -43,9 +42,11 @@ function ballMovement() {
         ball.addEventListener("click", e => {
             console.log(ball.classList)
 
-            if (ball.classList[2] == "active") {
+            if (ball.classList.contains("active")) {
+                console.log(activeBall.length)
                 ball.classList.remove("active");
-            } else {
+            }
+            else {
                 if (activeBall.length === 0) {
                     ball.classList += " active";
                 }
@@ -57,11 +58,23 @@ function ballMovement() {
                     if (!field.hasChildNodes()) {
                         field.appendChild(activeBall[0])
                         activeBall[0].classList.remove("active")
+                        randomballs()
                     }
                 })
             }
         })
     }
 }
+randomballs()
+ballcheck()
+ballMovement()
+
+}
+
+function ballListener() {
+
+}
+
 
 start()
+// ballMovement()
