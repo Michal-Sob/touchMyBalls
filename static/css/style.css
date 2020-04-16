@@ -16,10 +16,12 @@
 }
 
 .color1 {
+    display: inline-block;
     background-color: red;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: 2px;
+    border-radius: 50%;
     border-color: black;
     border-style: solid;
     margin: 0;
@@ -28,10 +30,12 @@
 }
 
 .color2 {
+    display: inline-block;
     background-color: blue;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: 2px;
+    border-radius: 50%;
     border-color: black;
     border-style: solid;
     margin: 0;
@@ -40,10 +44,12 @@
 }
 
 .color3 {
+    display: inline-block;
     background-color: yellow;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: 2px;
+    border-radius: 50%;
     border-color: black;
     border-style: solid;
     margin: 0;
@@ -52,10 +58,12 @@
 }
 
 .color4 {
+    display: inline-block;
     background-color: forestgreen;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: 2px;
+    border-radius: 50%;
     border-color: black;
     border-style: solid;
     margin: 0;
@@ -64,86 +72,12 @@
 }
 
 .color5 {
+    display: inline-block;
     background-color: blueviolet;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.game-field .row {
-    height: 60px;
-    display: flex;
-}
-
-.field {
-    height: 60px;
-    width: 60px;
-    background: white;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.color1 {
-    background-color: red;
-    height: 60px;
-    width: 60px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.color2 {
-    background-color: blue;
-    height: 60px;
-    width: 60px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.color3 {
-    background-color: yellow;
-    height: 60px;
-    width: 60px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.color4 {
-    background-color: forestgreen;
-    height: 60px;
-    width: 60px;
-    border: 2px;
-    border-color: black;
-    border-style: solid;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.color5 {
-    background-color: blueviolet;
-    height: 60px;
-    width: 60px;
-    border: 2px;
+    border-radius: 50%;
     border-color: black;
     border-style: solid;
     margin: 0;
@@ -152,10 +86,19 @@
 }
 
 .ball {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    height: 60px;
+    width: 60px;
     background: lightblue;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .active {

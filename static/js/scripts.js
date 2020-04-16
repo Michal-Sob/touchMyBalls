@@ -13,7 +13,10 @@ button.addEventListener('click',ballcheck);
        let random = Math.floor(Math.random()*(len-1));
        let ballfield = fields[random];
        let randomcolor = Math.floor(Math.random()*(5)+1);
-       ballfield.classList.replace('field',`color${randomcolor}`);
+       ballfield.classList.replace('field','ball');
+       let newball = document.createElement("div");
+       newball.classList.add(`color${randomcolor}`);
+       ballfield.appendChild(newball);
    }
  }
 
@@ -60,4 +63,4 @@ function ballMovement() {
 }
 
 start()
-ballMovement()
+// ballMovement()
