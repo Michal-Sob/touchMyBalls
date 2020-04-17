@@ -1,10 +1,5 @@
 function start() {
 
-let button = document.getElementById('add_balls');
-// button.addEventListener('click',randomballs);
-// button.addEventListener('click',ballcheck);
-
-
  function randomballs(){
 
    for (let i=0; i<3; i++){
@@ -71,10 +66,6 @@ let button = document.getElementById('add_balls');
 randomballs()
 ballcheck()
 ballMovement()
-
-}
-
-function ballListener() {
 
 }
 
